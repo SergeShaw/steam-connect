@@ -23,6 +23,7 @@ class SteamConnect {
     this._jar = request.jar(new FileCookieStore(options.cookieStore));
     this.username = options.username;
     this.password = options.password;
+    this.twoFactorSecret = options.twoFactorSecret;
     this.delay = options.delay || 1000*60*5;
     this.log = options.log || false;
 
